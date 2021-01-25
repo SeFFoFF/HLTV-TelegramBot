@@ -1,0 +1,20 @@
+{
+  "name": "telegrambot-htlv.org",
+  "version": "1.0.0",
+  "description": "Telegram Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "git add . && git commit -m 'fix' && git push heroku main"
+  },
+  "engines": {
+    "node": "14.15.4"
+  },
+  "author": "Anton Efimov <anton.iefimov@nure.ua>",
+  "license": "ISC",
+  "devDependencies": {
+    "hltv": "^2.22.2",
+    "node-telegram-bot-api": "^0.51.0"
+  },
+  "dependencies": {}
+}
