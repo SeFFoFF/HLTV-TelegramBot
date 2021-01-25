@@ -1,9 +1,9 @@
 const TelegramBot = require('node-telegram-bot-api');
-const { HLTV } = require('hltv')
+const { HLTV } = require('hltv');
 
 function formatDate(milliseconds) {
     let date = new Date(milliseconds);
-    let y = date.getFullYear()
+    let y = date.getFullYear();
     let m = date.getMonth() + 1;
     let d = date.getDate();
     let hours = date.getHours();
@@ -22,12 +22,6 @@ const bot = new TelegramBot(TOKEN, {
 });
 
 console.log('Bot has been started...');
-
-// bot.on('message', msg => {
-//     const { id } = msg.chat;
-
-//     bot.sendMessage(id, `Use my commands!\n/live\n/upcoming\n/results\n/developer`);
-// });
 
 bot.onText(/\/start/, msg => {
     const { id } = msg.chat;
